@@ -50,7 +50,7 @@ class AdeLife(){
     doTheFan(fan[currentFun])
   }
   
-  private func ski(_ b:Bool){
+  public func ski(_ b:Bool){
     print("https://youtu.be/CXrAzc2wayk")
   }
 }
