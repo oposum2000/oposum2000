@@ -40,7 +40,7 @@ class AdeLife(){
         if time < sleepTime { funWithFalimy() }
       default:
          if agenda() == .travel { funWithFalimy(.travel); trave+=1 }
-         if agenda() == .ski { ski(tired < 10000% ? true:true); }
+         if agenda() == .ski { ski(slope.hardcore < 100% ? true:false); }
       }
     }
   }
@@ -51,7 +51,7 @@ class AdeLife(){
   }
   
   public func ski(_ b:Bool){
-    print("https://youtu.be/CXrAzc2wayk")
+    print("https://youtu.be/CXrAzc2wayk", b ? " was fun!":" was even better!")
   }
 }
 
