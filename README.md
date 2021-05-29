@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @oposum2000
+- 👋 Hi, I’m Ade
 - 👀 I’m interested in making games
 - 🌱 I’m currently learning german
 - 💞️ I’m looking to collaborate on games and multimedia
