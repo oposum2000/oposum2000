@@ -18,19 +18,6 @@ class AdeLife(){
     life()
   }
   
-  public func interaction(_ d:Date,_ length:TimeInterval){
-    age = TimeInterval(d - bDate)
-    var interationTime = 0
-    while interactionTime < length {
-      talkNice()
-      listenCarrefully()
-      learn()
-      share()
-      haveFun()
-      interactionTime+=1
-    }
-  }
-  
   private func life(){
     while Date.curentDate < endDate {
       switch Date.dayOfTheWeek(){
@@ -48,6 +35,19 @@ class AdeLife(){
   private func funWithFalimy(_ t:Int=0){
     var currentFun = t > 0 ? t:rnd(fun.count)
     doTheFan(fan[currentFun])
+  }
+  
+  public func interaction(_ d:Date,_ length:TimeInterval){
+    age = TimeInterval(d - bDate)
+    var interationTime = 0
+    while interactionTime < length {
+      talkNice()
+      listenCarrefully()
+      learn()
+      share()
+      haveFun()
+      interactionTime+=1
+    }
   }
   
   public func ski(_ b:Bool){
