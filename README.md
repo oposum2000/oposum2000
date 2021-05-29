@@ -1,10 +1,37 @@
-- 👋 Hi, I’m Ade
-- 👀 I’m interested in making games
-- 🌱 I’m currently learning german
-- 💞️ I’m looking to collaborate on games and multimedia
-- 📫 How to reach me : oposum2012@gmail.com
+// - 👋 Hi, I’m Ade
+include WorkKit
+include FunKit
 
-<!---
-oposum2000/oposum2000 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+class AdeLife(){
+  public var bDate : "22.06.1976"
+  public var fun = ["reading","learning","playing piano","bike","coding","travel"]
+  
+  private var age : Date!
+  private var endDate : Date!
+  
+  init(_ t:Date, _ e:Date){
+    self.age = t - bDate
+    self.endDate = e
+    life()
+  }
+  
+  private func life(){
+    while Date.curentDate < endDate {
+      switch Date.dayOfTheWeek(){
+      case workDay:
+        var task = Tasks.curentTask()
+        getTaskDone()
+        if time < sleepTime { funWithFalimy() }
+      default:
+         if agenda() == .travel { funWithFalimy(.travel); trave+=1 }
+         if agenda() == .ski { ski(tired < 10000% ? again:again); }
+      }
+    }
+  }
+  
+  private func funWithFalimy(_ t:Int=0){
+    var currentFun = t > 0 ? t:rnd(fun.count)
+    doTheFan(fan[currentFun])
+  }
+}
+
