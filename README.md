@@ -9,6 +9,7 @@ class AdeLife(){
   public var knowledge = ["SWIFT","C++","GIT","JIRA","SVN","3DSMAX","Blender","Photoshop","many many other"]
   public var languages = ["English=fluent","German=beginner","Romanian=native","Russian=fluent"]
   public var email = "oposum2012@gmail.com" 
+  
   private var age : Date!
   private var endDate : Date!
   
