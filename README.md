@@ -22,8 +22,8 @@ class AdeLife(){
     while Date.curentDate < endDate {
       switch Date.dayOfTheWeek(){
       case workDay:
-        var task = Tasks.curentTask()
-        getTaskDone()
+        var task = CurentCompany.Tasks.curentTask()
+        getTaskDone(task)
         if time < sleepTime { funWithFalimy() }
       default:
          if agenda() == .travel { funWithFalimy(.travel); trave+=1 }
