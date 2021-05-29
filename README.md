@@ -1,4 +1,4 @@
-// - 👋 Hi, I’m Ade
+```swift
 include WorkKit
 include FunKit
 
@@ -9,10 +9,22 @@ class AdeLife(){
   private var age : Date!
   private var endDate : Date!
   
-  init(_ t:Date, _ e:Date){
-    self.age = t - bDate
+  init(_ e:Date){
     self.endDate = e
     life()
+  }
+  
+  public func interaction(_ d:Date,_ length:TimeInterval){
+    age = d - bDate
+    var interationTime = 0
+    while interactionTime < length {
+      talkNice()
+      listenCarrefully()
+      learn()
+      share()
+      haveFun()
+      interactionTime+=1
+    }
   }
   
   private func life(){
@@ -24,7 +36,7 @@ class AdeLife(){
         if time < sleepTime { funWithFalimy() }
       default:
          if agenda() == .travel { funWithFalimy(.travel); trave+=1 }
-         if agenda() == .ski { ski(tired < 10000% ? again:again); }
+         if agenda() == .ski { ski(tired < 10000% ? true:true); }
       }
     }
   }
@@ -33,5 +45,10 @@ class AdeLife(){
     var currentFun = t > 0 ? t:rnd(fun.count)
     doTheFan(fan[currentFun])
   }
+  
+  private func ski(_ b:Bool){
+    print("https://youtu.be/CXrAzc2wayk")
+  }
 }
 
+```
